@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip calculator</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 
@@ -15,23 +17,23 @@
         <h1>Quick Tip</h1>
 
         <section>
-            <div>
+            <div class="bill">
                 <label for="yourBill">Bill</label>
                 <input type="number" placeholder="Your bill amount" id="yourBill" />
             </div>
             <div>
-                <div>
+                <div class="space-between">
                     <label for="tipInput">Select tip</label>
                     <span id="tipPercent">0%</span>
                 </div>
-                <input type="range" value="0" id="tipInput">
+                <input type="range" value="0" id="tipInput" class="range">
             </div>
             <div>
-                <span>Tip</span>
+                <span class="space-between">Tip</span>
                 <span id="tipValue"></span>
             </div>
             <hr>
-            <div>
+            <div class="space-between total">
                 <span>Total</span>
                 <span id="totalWithTip"></span>
             </div>
@@ -39,17 +41,17 @@
 
         <section>
             <div>
-                <div>
+                <div class="space-between">
                     <label for="splitInput">Split</label>
                     <span id="splitValue">1 person</span>
                 </div>
-                <input type="range" min="1" max="10" value="1" id="splitInput">
+                <input type="range" min="1" max="10" value="1" id="splitInput" class="range">
             </div>
-            <div>
+            <div class="space-between">
                 <span>Bill each</span>
                 <span id="billEach"></span>
             </div>
-            <div>
+            <div class="space-between">
                 <span>Tip each</span>
                 <span id="tipEach"></span>
             </div>
