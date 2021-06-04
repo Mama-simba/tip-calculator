@@ -54,7 +54,7 @@ input[type="number"] {
     border-radius: 0.3rem;
     padding: 0.3rem 0 0.3rem 0.4rem;
     box-shadow: inset 0 1px 1px lightgray;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /*range sliders customisation for different browsers*/
@@ -91,9 +91,6 @@ input[type="number"] {
 }
 
 
-
-
-
 .space-between {
     display: flex;
     justify-content: space-between;
@@ -110,4 +107,40 @@ hr {
 	border-top: 1px solid #8c8b8b;
     padding: 1px 0;
     margin: 1em 0;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 730px){
+  
+    main {
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    padding: 2.5rem 1.5rem 4rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    section {
+    font-size: 0.9rem;
+}
+
+.bill label {
+    flex: 0.5;
+}
+
+input[type="number"] {
+    width: 95%;
+    font-size: 0.9rem; 
+}
+
+.total {
+    font-size: 1rem;
+}
+
+
+
+
+
 }
